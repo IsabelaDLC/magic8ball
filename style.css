@@ -1,41 +1,30 @@
-*, html, body{
-    margin: 0;
-    padding: 0;
+body {
+    background: linear-gradient(90deg, green, white);
+    font-family: sans-serif;
 }
-.container {
-    background: hotpink;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+
+#content {
+    background: white;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#eightBall {
+    width: 350px;
+    height: 350px;
+    background: black;
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 100%;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
 
-.advice-eye {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: lightblue;
-    text-align: center;
-    padding: 0.5em;
-    position: relative;
-}
-
-p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-weight: 700;
-    transform: translate(-50%, -50%)
-}
-
-button {
-    border: none;
-    padding: 0.5em 1em;
-    margin: 1em;
-    border-radius: 5px;
-}
-
-button:hover {
-    cursor: pointer;
+#answer {
+    font-size: 25px;
 }

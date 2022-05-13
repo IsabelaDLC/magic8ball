@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Magic 8 Ball</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="adviceEye" id="adviceEye">
-            <p id="advice-display"></p>
+    <div id="content">
+        <h1>Magic Eight Ball</h1>
+        <h2>Type your question below:</h2>
+        <textarea id="questionArea" cols="30" rows="4"></textarea>
+        <br>
+        <button>Shake!</button>
+        <div id="eightBall">
+            <p id="answer">Ask again later ;)</p>
         </div>
-        <button id="advice-btn">Advise me!</button>
     </div>
-    <script src="index.pack.js"></script>
+    <script src="main.js">
+    </script>
 </body>
 </html>

@@ -1,20 +1,29 @@
-import randomcolor from "randomcolor"
-
-const advice = [
-    "if you're good at something, never do it for free",
-    "do, or do not. There is no try.",
-    "It's what you do right now that makes a difference",
-    "Until you start believing in yourself, you ain't gonna have a life!",
-    "Life does not stop and start at your convenience",
-    "You know what the trouble about real life is? There's no danger music.",
-    "Idk but a bean and cheese burrito would probably solve at least one of your problems"
-]
-
-const btn = document.getElementById("advice-btn")
-const adviceText = document.getElementById("advice-display")
-
-btn.addEventListener("click", displayAdvice)
-
-function displayAdvice {
-    console.log('beeeep')
+function generate_random(max_number) {
+    return Math.round(Math.random()*max_number);
 }
+
+let button = document.querySelector("button");
+let answer = document.querySelector("#answer");
+
+button.addEventListener ("click", function (){ 
+    let randomNumber = generate_random(3);
+    let answerText = "";
+
+    if (randomNumber == 0) {
+        answerText = "Yes Definetely!";
+    }
+
+    else if (randomNumber == 1) {
+        answerText = "No, certainly not!";
+    }
+
+    else if (randomNumber == 2) {
+        answerText = "Ask again later!";
+    }
+
+    else {
+        answerText = "Get a bean and cheese burrito";
+    }
+
+    answer.innerHTML = answerText;
+});
